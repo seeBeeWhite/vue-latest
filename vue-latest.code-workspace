@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.language": "en,ru",
+		"cSpell.words": [
+			"scrollto",
+			"vuetify"
+		]
+	}
+}
