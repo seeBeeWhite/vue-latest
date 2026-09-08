@@ -8,6 +8,9 @@
 		"cSpell.language": "en,ru",
 		"cSpell.words": [
 			"scrollto",
+			"unocss",
+			"VITE",
+			"Vitest",
 			"vuetify"
 		]
 	}

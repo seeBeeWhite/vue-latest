@@ -49,6 +49,7 @@
     "sass-embedded": "^1.104.0",
     "typescript": "~6.0.0",
     "unocss": "^66.10.0",
+    "unocss-preset-vuetify": "^0.4.0",
     "unplugin-fonts": "^2.0.0",
     "vite": "^8.1.5",
     "vite-plugin-static-copy": "^4.1.1",
