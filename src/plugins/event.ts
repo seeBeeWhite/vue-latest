@@ -1,6 +1,6 @@
-import mitt from 'mitt'
+import mitt from "mitt";
 
 // Interfaces
-import type { Events } from '@/interfaces/event'
+import type { Events } from "@/interfaces/event";
 
-export const emitter = mitt<Events.Type>()
+export const emitter = mitt<Events.Type>();

@@ -1,11 +1,11 @@
 export namespace Route {
   export enum Path {
-    HOME = '/',
-    ABOUT = '/about',
+    HOME = "/",
+    ABOUT = "/about",
   }
 
   export enum Name {
-    HOME = 'home',
-    ABOUT = '/about',
+    HOME = "home",
+    ABOUT = "/about",
   }
 }
