@@ -6,7 +6,6 @@ import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import fonts from 'unplugin-fonts/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
-import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -29,9 +28,6 @@ export default defineConfig({
           },
         ],
       },
-    }),
-    viteStaticCopy({
-      targets: [{ src: 'src/assets/images', dest: 'assets/images', rename: {stripBase: true} }],
     }),
     vueDevTools(),
     UnoCSS(),

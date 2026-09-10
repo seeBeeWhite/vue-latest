@@ -1,31 +1,20 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-
-// Components
-import HelloWorld from "./components/HelloWorld.vue";
+import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/images/logo.svg"
-      width="125"
-      height="125"
-    />
+  <v-app>
+    <AppHeader />
 
-    <div>
-      <HelloWorld msg="Hello World" />
+    <v-main>
+      <router-view v-slot="{ Component, route }">
+        <v-fade-transition mode="out-in">
+          <component :is="Component" :key="route.fullPath" />
+        </v-fade-transition>
+      </router-view>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+      <AppFooter />
+    </v-main>
+  </v-app>
 </template>
-
-<style scoped></style>

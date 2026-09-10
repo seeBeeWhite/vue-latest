@@ -10,14 +10,24 @@ import { createVuetify, type ThemeDefinition } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
-const BrandTheme: ThemeDefinition = {
+const hisantaLight: ThemeDefinition = {
   dark: false,
   colors: {
-    primary: "#074166",
-    secondary: "FFECB3",
-    white: "#FFFFFF",
-    black: "#212121",
-    background: "#FAFAFA",
+    background: "#FFFFFF",
+    surface: "#FFFFFF",
+    "surface-variant": "#F5F5F3",
+    primary: "#1A1A1A",
+    secondary: "#6B6B66",
+    "on-background": "#1A1A1A",
+    "on-surface": "#1A1A1A",
+    "on-primary": "#FFFFFF",
+    accent: "#C8A97E",
+  },
+  variables: {
+    "border-color": "#E6E6E2",
+    "border-opacity": 1,
+    "medium-emphasis-opacity": 0.72,
+    "high-emphasis-opacity": 0.94,
   },
 };
 
@@ -34,14 +44,22 @@ export default createVuetify({
   components,
   directives,
   theme: {
-    defaultTheme: "BrandTheme",
+    defaultTheme: "hisantaLight",
     themes: {
-      BrandTheme,
+      hisantaLight,
     },
   },
   defaults: {
-    VBtn: { color: "primary", flat: "true" },
+    VBtn: {
+      color: "primary",
+      flat: true,
+      rounded: "lg",
+      elevation: 0,
+      height: 48,
+    },
     VCard: {
+      flat: true,
+      rounded: "lg",
       VCardActions: {
         VBtn: { variant: "flat" },
       },
